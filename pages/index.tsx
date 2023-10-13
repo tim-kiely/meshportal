@@ -39,8 +39,8 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Mesh App on Cardano</title>
-        <meta name="description" content="A Cardano dApp powered my Mesh" />
+        <title>Pondrop</title>
+        <meta name="description" content="Pondrop" />
         <link
           rel="icon"
           href="https://meshjs.dev/favicon/favicon-32x32.png"
@@ -64,8 +64,9 @@ export default function Home() {
               onClick={() => startMining()}
               disabled={loading}
             >
-              {loading ? "Creating transaction..." : "Mint Mesh Token"}
-            </button>
+                {loading ? "Creating transaction..." : "Mint Shareholder Token"}
+              </button>
+            
           ) : (
             <CardanoWallet />
           )}
@@ -77,34 +78,7 @@ export default function Home() {
           )}
         </div>
 
-        <div className="grid">
-          <a href="https://meshjs.dev/apis" className="card">
-            <h2>Documentation</h2>
-            <p>
-              Our documentation provide live demos and code samples; great
-              educational tool for learning how Cardano works.
-            </p>
-          </a>
-
-          <a
-            href="https://meshjs.dev/guides/multisig-minting"
-            className="card"
-          >
-            <h2>Multi-sig minting guide</h2>
-            <p>
-              Learn more about multi-sig transactions, and how you can create a
-              site for minting native tokens.
-            </p>
-          </a>
-
-          <a href="https://meshjs.dev/react" className="card">
-            <h2>React components</h2>
-            <p>
-              Useful React UI components and hooks, seamlessly integrate them
-              into your app, and bring the user interface to life.
-            </p>
-          </a>
-        </div>
+        
       </main>
 
       <footer className="footer">

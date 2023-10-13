@@ -42,7 +42,8 @@ export default async function handler(
 
   const assetIdPrefix = "MeshToken";
   // In this starter template, we simply randomly pick one from.
-  let selectedAssetId = Math.floor(Math.random() * 10).toString();
+  //let selectedAssetId = Math.floor(Math.random() * 10).toString();
+  let selectedAssetId = 0;
   const assetMetadata = assetsMetadata[selectedAssetId];
   const assetName = `${assetIdPrefix}${selectedAssetId}`;
 
