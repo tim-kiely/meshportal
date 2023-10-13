@@ -54,7 +54,7 @@ export default function Home() {
 
       <main className="main">
         <h1 className="title">
-          <a href="https://meshjs.dev/">Mesh</a> Multi-sig Minting
+          Pondrop Web 3.0
         </h1>
 
         <div className="demo">
